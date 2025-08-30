@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Zomblox.xyz</title>
+    <link rel="canonical" href="https://zomblox.xyz/terms">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧟</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-light': '#f5f5f7',
+                        'apple-dark': '#1d1d1f',
+                        'apple-blue': '#0071e3',
+                        'apple-gray': '#86868b',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(to bottom, #f5f5f7, #ffffff);
+            color: #1d1d1f;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .logo {
+            position: relative;
+            display: inline-block;
+            font-weight: 800;
+            background: linear-gradient(90deg, #8a2387, #e94057, #f27121);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .logo::after {
+            content: '🧟';
+            position: absolute;
+            right: -35px;
+            top: -5px;
+            font-size: 1.8rem;
+        }
+        
+        .content-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6em;
+            height: 0.7em;
+            width: 0.7em;
+            background: linear-gradient(90deg, #8a2387, #e94057);
+            border-radius: 50%;
+        }
+        
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            color: #0071e3;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .back-btn:hover {
+            color: #0056b3;
+            transform: translateX(-3px);
+        }
+        
+        .terms-nav {
+            position: sticky;
+            top: 2rem;
+            max-height: calc(100vh - 4rem);
+            overflow-y: auto;
+        }
+        
+        .terms-nav a {
+            display: block;
+            padding: 0.5rem 1rem;
+            border-left: 3px solid #e5e5e7;
+            color: #86868b;
+            transition: all 0.3s;
+            margin-bottom: 0.25rem;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .terms-nav a:hover, .terms-nav a.active {
+            color: #0071e3;
+            border-left-color: #0071e3;
+            background-color: rgba(0, 113, 227, 0.05);
+        }
+        
+        @media (max-width: 768px) {
+            .terms-nav {
+                position: relative;
+                top: 0;
+                max-height: none;
+            }
+        }
+        
+        .highlight {
+            background-color: rgba(0, 113, 227, 0.05);
+            border-left: 4px solid #0071e3;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .update-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #8a2387, #e94057);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="py-6 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-3xl md:text-4xl font-bold logo">Zomblox</h1>
+                <span class="ml-2 text-sm font-medium bg-gray-100 text-gray-800 rounded-full px-3 py-1 hidden sm:inline-block">.xyz</span>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="font-medium text-gray-700 hover:text-apple-blue transition">Home</a></li>
+                    <li><a href="#" class="font-medium text-gray-700 hover:text-apple-blue transition">About</a></li>
+                    <li><a href="#" class="font-medium text-gray-700 hover:text-apple-blue transition">Games</a></li>
+                    <li><a href="#" class="font-medium text-gray-700 hover:text-apple-blue transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Breadcrumb -->
+        <div class="mb-8">
+            <a href="index.html" class="back-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Back to Home
+            </a>
+        </div>
+        
+        <!-- Page Header -->
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Terms of Service</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Last updated: <span class="font-medium">August 15, 2023</span></p>
+        </section>
+        
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Navigation -->
+            <div class="w-full md:w-1/4">
+                <div class="terms-nav p-6 content-card">
+                    <h3 class="font-bold text-lg mb-4">Contents</h3>
+                    <a href="#acceptance" class="active">1. Acceptance of Terms</a>
+                    <a href="#description">2. Service Description</a>
+                    <a href="#user-conduct">3. User Conduct</a>
+                    <a href="#account">4. Account Terms</a>
+                    <a href="#ip">5. Intellectual Property</a>
+                    <a href="#third-party">6. Third-Party Content</a>
+                    <a href="#disclaimer">7. Disclaimer</a>
+                    <a href="#limitation">8. Limitation of Liability</a>
+                    <a href="#indemnification">9. Indemnification</a>
+                    <a href="#changes">10. Changes to Terms</a>
+                    <a href="#governing">11. Governing Law</a>
+                    <a href="#contact">12. Contact Information</a>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="w-full md:w-3/4">
+                <div class="content-card p-8">
+                    <!-- Section 1 -->
+                    <section id="acceptance" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">1. Acceptance of Terms</h2>
+                        <p class="mb-4">By accessing and using Zomblox.xyz ("the Site"), you accept and agree to be bound by the terms and provisions of this agreement. In addition, when using this Site's particular services, you shall be subject to any posted guidelines or rules applicable to such services.</p>
+                        <p>If you do not agree to these Terms of Service, please do not use this Site. We reserve the right, at our discretion, to change, modify, add, or remove portions of these terms at any time. Please check these terms periodically for changes.</p>
+                    </section>
+                    
+                    <!-- Section 2 -->
+                    <section id="description" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">2. Service Description</h2>
+                        <p class="mb-4">Zomblox.xyz provides access to a browser-based game ("Zomblox") and a community forum where users can discuss the game and related topics. The game is provided through a third-party platform, and we do not control or operate the game software directly.</p>
+                        <p>We reserve the right to modify, suspend, or discontinue any aspect of the Site or services at any time, including the availability of any feature, database, or content.</p>
+                    </section>
+                    
+                    <!-- Section 3 -->
+                    <section id="user-conduct" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">3. User Conduct</h2>
+                        <p class="mb-4">As a condition of use, you promise not to use the Site for any purpose that is unlawful or prohibited by these Terms. You agree to abide by all applicable local, state, national and international laws and regulations.</p>
+                        
+                        <h3 class="text-xl font-semibold mb-2 mt-6">3.1. Prohibited Activities</h3>
+                        <p class="mb-4">You agree not to:</p>
+                        <ul class="list-disc pl-6 mb-4 space-y-2">
+                            <li>Post any content that is abusive, threatening, obscene, defamatory, or otherwise objectionable</li>
+                            <li>Impersonate any person or entity or falsely state or misrepresent your affiliation with a person or entity</li>
+                            <li>Interfere with or disrupt the Site or servers or networks connected to the Site</li>
+                            <li>Attempt to gain unauthorized access to any portion of the Site or any other systems or networks connected to the Site</li>
+                            <li>Use any automated means to access the Site or collect any information from the Site</li>
+                            <li>Post any content that contains viruses, Trojan horses, worms, or any other harmful or destructive content</li>
+                        </ul>
+                        
+                        <div class="highlight">
+                            <p class="font-medium">Note:</p>
+                            <p>Our forum uses automated filters to block inappropriate language, but we cannot guarantee that all offensive content will be caught. Please report any violations you encounter.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- Section 4 -->
+                    <section id="account" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">4. Account Terms</h2>
+                        <p class="mb-4">While our forum allows anonymous posting, if we implement user accounts in the future, the following terms would apply:</p>
+                        <ul class="list-disc pl-6 mb-4 space-y-2">
+                            <li>You must be at least 13 years old to use this service</li>
+                            <li>You are responsible for maintaining the security of your account</li>
+                            <li>You are responsible for all activities that occur under your account</li>
+                            <li>You must not use the Site for any illegal or unauthorized purpose</li>
+                        </ul>
+                    </section>
+                    
+                    <!-- Section 5 -->
+                    <section id="ip" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">5. Intellectual Property</h2>
+                        <p class="mb-4">The Site and its original content, features, and functionality are owned by Zomblox.xyz and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+                        <p>The Zomblox game is the property of its respective owners, and we claim no intellectual property rights over the game content.</p>
+                    </section>
+                    
+                    <!-- Section 6 -->
+                    <section id="third-party" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">6. Third-Party Content</h2>
+                        <p class="mb-4">Our Site may contain links to third-party websites or services that are not owned or controlled by Zomblox.xyz. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.</p>
+                        <p>You acknowledge and agree that Zomblox.xyz shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such websites or services.</p>
+                    </section>
+                    
+                    <!-- Section 7 -->
+                    <section id="disclaimer" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">7. Disclaimer</h2>
+                        <p class="mb-4">Your use of the Site is at your sole risk. The Site is provided on an "AS IS" and "AS AVAILABLE" basis. The Site is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.</p>
+                    </section>
+                    
+                    <!-- Section 8 -->
+                    <section id="limitation" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">8. Limitation of Liability</h2>
+                        <p class="mb-4">In no event shall Zomblox.xyz, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+                        <ul class="list-disc pl-6 mb-4 space-y-2">
+                            <li>Your access to or use of or inability to access or use the Site</li>
+                            <li>Any conduct or content of any third party on the Site</li>
+                            <li>Any content obtained from the Site</li>
+                            <li>Unauthorized access, use or alteration of your transmissions or content</li>
+                        </ul>
+                    </section>
+                    
+                    <!-- Section 9 -->
+                    <section id="indemnification" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">9. Indemnification</h2>
+                        <p class="mb-4">You agree to defend, indemnify and hold harmless Zomblox.xyz and its licensees and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of:</p>
+                        <ul class="list-disc pl-6 mb-4 space-y-2">
+                            <li>Your use and access of the Site</li>
+                            <li>Your violation of any term of these Terms of Service</li>
+                            <li>Your violation of any third-party right, including without limitation any copyright, property, or privacy right</li>
+                        </ul>
+                    </section>
+                    
+                    <!-- Section 10 -->
+                    <section id="changes" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">10. Changes to Terms <span class="update-badge">Updated</span></h2>
+                        <p class="mb-4">We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+                        <p>By continuing to access or use our Site after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Site.</p>
+                    </section>
+                    
+                    <!-- Section 11 -->
+                    <section id="governing" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">11. Governing Law</h2>
+                        <p class="mb-4">These Terms shall be governed and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.</p>
+                        <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect.</p>
+                    </section>
+                    
+                    <!-- Section 12 -->
+                    <section id="contact" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">12. Contact Information</h2>
+                        <p class="mb-4">If you have any questions about these Terms, please contact us at:</p>
+                        <p class="bg-apple-light p-4 rounded-lg inline-block">Email: <span class="font-medium">support@zomblox.xyz</span></p>
+                    </section>
+                    
+                    <div class="border-t mt-12 pt-8 text-center text-gray-500">
+                        <p>© 2023 Zomblox.xyz. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-apple-light border-t mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold logo">Zomblox</div>
+                    <p class="mt-2 text-gray-600">The ultimate zombie shooter browser game</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-600">© 2023 Zomblox.xyz - All Rights Reserved</p>
+                    <p class="mt-2 text-gray-500 text-sm">
+                        <a href="terms.html" class="text-apple-blue hover:underline">Terms of Service</a> • 
+                        <a href="#" class="text-apple-blue hover:underline">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    // Update active class in navigation
+                    document.querySelectorAll('.terms-nav a').forEach(a => {
+                        a.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Scroll to the element
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Update active nav item on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.terms-nav a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if(pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

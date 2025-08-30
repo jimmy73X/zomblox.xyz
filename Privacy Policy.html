@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Zomblox.xyz</title>
+    <link rel="canonical" href="https://zomblox.xyz/privacy">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧟</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-light': '#f5f5f7',
+                        'apple-dark': '#1d1d1f',
+                        'apple-blue': '#0071e3',
+                        'apple-gray': '#86868b',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(to bottom, #f5f5f7, #ffffff);
+            color: #1d1d1f;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .logo {
+            position: relative;
+            display: inline-block;
+            font-weight: 800;
+            background: linear-gradient(90deg, #8a2387, #e94057, #f27121);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .logo::after {
+            content: '🧟';
+            position: absolute;
+            right: -35px;
+            top: -5px;
+            font-size: 1.8rem;
+        }
+        
+        .content-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6em;
+            height: 0.7em;
+            width: 0.7em;
+            background: linear-gradient(90deg, #8a2387, #e94057);
+            border-radius: 50%;
+        }
+        
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            color: #0071e3;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .back-btn:hover {
+            color: #0056b3;
+            transform: translateX(-3px);
+        }
+        
+        .privacy-nav {
+            position: sticky;
+            top: 2rem;
+            max-height: calc(100vh - 4rem);
+            overflow-y: auto;
+        }
+        
+        .privacy-nav a {
+            display: block;
+            padding: 0.5rem 1rem;
+            border-left: 3px solid #e5e5e7;
+            color: #86868b;
+            transition: all 0.3s;
+            margin-bottom: 0.25rem;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .privacy-nav a:hover, .privacy-nav a.active {
+            color: #0071e3;
+            border-left-color: #0071e3;
+            background-color: rgba(0, 113, 227, 0.05);
+        }
+        
+        @media (max-width: 768px) {
+            .privacy-nav {
+                position: relative;
+                top: 0;
+                max-height: none;
+            }
+        }
+        
+        .highlight {
+            background-color: rgba(0, 113, 227, 0.05);
+            border-left: 4px solid #0071e3;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .update-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #8a2387, #e94057);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 1rem;
+        }
+        
+        .privacy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .privacy-table th, .privacy-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        
+        .privacy-table th {
+            background-color: #f9f9f9;
+            font-weight: 600;
+        }
+        
+        .privacy-table tr:hover {
+            background-color: #f5f5f7;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="py-6 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-3xl md:text-4xl font-bold logo">Zomblox</h1>
+                <span class="ml-2 text-sm font-medium bg-gray-100 text-gray-800 rounded-full px-3 py-1 hidden sm:inline-block">.xyz</span>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="font-medium text-gray-700 hover:text-apple-blue transition">Home</a></li>
+                    <li><a href="#" class="font-medium text-gray-700 hover:text-apple-blue transition">About</a></li>
+                    <li><a href="#" class="font-medium text-gray-700 hover:text-apple-blue transition">Games</a></li>
+                    <li><a href="#" class="font-medium text-gray-700 hover:text-apple-blue transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Breadcrumb -->
+        <div class="mb-8">
+            <a href="index.html" class="back-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Back to Home
+            </a>
+        </div>
+        
+        <!-- Page Header -->
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Privacy Policy</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Last updated: <span class="font-medium">August 15, 2023</span></p>
+        </section>
+        
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Navigation -->
+            <div class="w-full md:w-1/4">
+                <div class="privacy-nav p-6 content-card">
+                    <h3 class="font-bold text-lg mb-4">Contents</h3>
+                    <a href="#introduction" class="active">1. Introduction</a>
+                    <a href="#information-collection">2. Information We Collect</a>
+                    <a href="#cookies">3. Cookies & Similar Technologies</a>
+                    <a href="#use-information">4. How We Use Information</a>
+                    <a href="#sharing-information">5. Sharing Information</a>
+                    <a href="#data-security">6. Data Security</a>
+                    <a href="#data-retention">7. Data Retention</a>
+                    <a href="#children-privacy">8. Children's Privacy</a>
+                    <a href="#your-rights">9. Your Rights</a>
+                    <a href="#third-party">10. Third-Party Links</a>
+                    <a href="#changes">11. Changes to Policy</a>
+                    <a href="#contact">12. Contact Us</a>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="w-full md:w-3/4">
+                <div class="content-card p-8">
+                    <!-- Section 1 -->
+                    <section id="introduction" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">1. Introduction</h2>
+                        <p class="mb-4">Welcome to Zomblox.xyz ("we," "our," or "us"). We are committed to protecting your privacy and ensuring you have a positive experience on our website and when using our services.</p>
+                        <p>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website zomblox.xyz (the "Site") and play our browser-based game Zomblox (the "Game"). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the Site.</p>
+                    </section>
+                    
+                    <!-- Section 2 -->
+                    <section id="information-collection" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">2. Information We Collect</h2>
+                        <p class="mb-4">We may collect information about you in a variety of ways. The information we may collect on the Site includes:</p>
+                        
+                        <h3 class="text-xl font-semibold mb-2 mt-6">2.1. Personal Data</h3>
+                        <p class="mb-4">While using our forum anonymously, we don't require personally identifiable information. However, if you contact us directly, we may receive additional information about you such as your name, email address, and the contents of the message and/or attachments you may send us.</p>
+                        
+                        <h3 class="text-xl font-semibold mb-2 mt-6">2.2. Derivative Data</h3>
+                        <p class="mb-4">Our web servers may automatically collect information when you access the Site, such as your IP address, your browser type, your operating system, your access times, and the pages you have viewed directly before and after accessing the Site.</p>
+                        
+                        <h3 class="text-xl font-semibold mb-2 mt-6">2.3. Game Data</h3>
+                        <p>We may collect anonymous data related to your game performance and preferences to improve our services. This may include scores, achievements, and game settings.</p>
+                    </section>
+                    
+                    <!-- Section 3 -->
+                    <section id="cookies" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">3. Cookies & Similar Technologies <span class="update-badge">Updated</span></h2>
+                        <p class="mb-4">We use cookies and similar tracking technologies to track the activity on our Site and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze our Site.</p>
+                        
+                        <p class="mb-4">The technologies we use may include:</p>
+                        
+                        <table class="privacy-table">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Purpose</th>
+                                    <th>Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Essential Cookies</td>
+                                    <td>Required for the operation of our website and game</td>
+                                    <td>Session</td>
+                                </tr>
+                                <tr>
+                                    <td>Performance Cookies</td>
+                                    <td>Collect information about how visitors use our website</td>
+                                    <td>1 year</td>
+                                </tr>
+                                <tr>
+                                    <td>Functionality Cookies</td>
+                                    <td>Recognize you when you return to our website</td>
+                                    <td>6 months</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="highlight">
+                            <p class="font-medium">Cookie Management:</p>
+                            <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Site.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- Section 4 -->
+                    <section id="use-information" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">4. How We Use Your Information</h2>
+                        <p class="mb-4">Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Site to:</p>
+                        
+                        <ul class="list-disc pl-6 mb-4 space-y-2">
+                            <li>Create and manage your game experience</li>
+                            <li>Improve our game and website</li>
+                            <li>Monitor and analyze usage and trends to improve your experience</li>
+                            <li>Prevent fraudulent transactions and monitor against theft</li>
+                            <li>Respond to customer service requests</li>
+                            <li>Resolve disputes and troubleshoot problems</li>
+                            <li>Compile anonymous statistical data for our use</li>
+                        </ul>
+                    </section>
+                    
+                    <!-- Section 5 -->
+                    <section id="sharing-information" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">5. Sharing Your Information</h2>
+                        <p class="mb-4">We may share information we have collected about you in certain situations. Your information may be disclosed as follows:</p>
+                        
+                        <h3 class="text-xl font-semibold mb-2 mt-6">5.1. Third-Party Service Providers</h3>
+                        <p class="mb-4">We may share your information with third parties that perform services for us or on our behalf, including data analysis, game hosting, and customer service.</p>
+                        
+                        <h3 class="text-xl font-semibold mb-2 mt-6">5.2. By Law or to Protect Rights</h3>
+                        <p class="mb-4">If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation.</p>
+                        
+                        <h3 class="text-xl font-semibold mb-2 mt-6">5.3. Business Transfers</h3>
+                        <p>We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</p>
+                    </section>
+                    
+                    <!-- Section 6 -->
+                    <section id="data-security" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">6. Data Security</h2>
+                        <p class="mb-4">We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.</p>
+                        
+                        <div class="highlight">
+                            <p class="font-medium">Note:</p>
+                            <p>Our forum uses automated filters to block inappropriate language, but we cannot guarantee that all offensive content will be caught. Please report any violations you encounter.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- Section 7 -->
+                    <section id="data-retention" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">7. Data Retention</h2>
+                        <p class="mb-4">We will retain your information only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our policies.</p>
+                        <p>Anonymous game data may be retained indefinitely to improve our services and for analytical purposes.</p>
+                    </section>
+                    
+                    <!-- Section 8 -->
+                    <section id="children-privacy" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">8. Children's Privacy</h2>
+                        <p class="mb-4">Our Site and Game are not intended for children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you become aware that a child has provided us with personal information without parental consent, please contact us. If we become aware that we have collected personal information from children under 13 without verification of parental consent, we take steps to remove that information from our servers.</p>
+                    </section>
+                    
+                    <!-- Section 9 -->
+                    <section id="your-rights" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">9. Your Rights</h2>
+                        <p class="mb-4">Depending on your location, you may have the following rights regarding your personal information:</p>
+                        
+                        <ul class="list-disc pl-6 mb-4 space-y-2">
+                            <li>The right to access and receive a copy of your personal information</li>
+                            <li>The right to rectify inaccurate personal information</li>
+                            <li>The right to request erasure of your personal information</li>
+                            <li>The right to restrict or object to processing of your information</li>
+                            <li>The right to data portability</li>
+                            <li>The right to withdraw consent at any time</li>
+                        </ul>
+                        
+                        <p>To exercise these rights, please contact us using the contact information provided below.</p>
+                    </section>
+                    
+                    <!-- Section 10 -->
+                    <section id="third-party" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">10. Third-Party Links</h2>
+                        <p class="mb-4">Our Site may contain links to third-party websites and applications of interest, including the game hosted on CrazyGames.com, that are not affiliated with us. Once you have used these links to leave our Site, any information you provide to these third parties is not covered by this Privacy Policy, and we cannot guarantee the safety and privacy of your information.</p>
+                        <p>Before visiting and providing any information to any third-party websites, you should inform yourself of the privacy policies and practices (if any) of the third party responsible for that website, and should take those steps necessary to, in your discretion, protect the privacy of your information.</p>
+                    </section>
+                    
+                    <!-- Section 11 -->
+                    <section id="changes" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">11. Changes to This Privacy Policy</h2>
+                        <p class="mb-4">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top of this Privacy Policy.</p>
+                        <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+                    </section>
+                    
+                    <!-- Section 12 -->
+                    <section id="contact" class="mb-10 scroll-mt-20">
+                        <h2 class="text-2xl font-bold mb-4 section-title">12. Contact Us</h2>
+                        <p class="mb-4">If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:</p>
+                        <p class="bg-apple-light p-4 rounded-lg inline-block">Email: <span class="font-medium">privacy@zomblox.xyz</span></p>
+                    </section>
+                    
+                    <div class="border-t mt-12 pt-8 text-center text-gray-500">
+                        <p>© 2023 Zomblox.xyz. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-apple-light border-t mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold logo">Zomblox</div>
+                    <p class="mt-2 text-gray-600">The ultimate zombie shooter browser game</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-600">© 2023 Zomblox.xyz - All Rights Reserved</p>
+                    <p class="mt-2 text-gray-500 text-sm">
+                        <a href="terms.html" class="text-apple-blue hover:underline">Terms of Service</a> • 
+                        <a href="privacy.html" class="text-apple-blue hover:underline">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    // Update active class in navigation
+                    document.querySelectorAll('.privacy-nav a').forEach(a => {
+                        a.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Scroll to the element
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Update active nav item on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.privacy-nav a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if(pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
